@@ -18,7 +18,7 @@ class m180221_085153_create_post_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('post', [
+        $this->createTable('posts', [
             'id' => $this->primaryKey(),
             'title' => $this->string(),
             'body' => $this->text(),
@@ -30,6 +30,6 @@ class m180221_085153_create_post_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('post');
+        $this->dropTable('posts');
     }
 }

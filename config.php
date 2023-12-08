@@ -22,7 +22,11 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'sqlite:@micro/database.sqlite',
+            //'dsn' => 'sqlite:@micro/database.sqlite',
+            'dsn' => 'mysql:host=localhost;dbname=restapi',
+            'username' => 'root',
+            'password' => 'password',
+            'charset' => 'utf8',
         ],
     ],
 ];
